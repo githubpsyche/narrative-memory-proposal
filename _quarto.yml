@@ -1,0 +1,49 @@
+project:
+  type: manuscript
+  output-dir: docs
+  render:
+    - index.qmd
+
+manuscript:
+  article: index.qmd
+  manuscript-url: https://githubpsyche.github.io/narrative-memory-proposal/
+  meca-bundle: false
+  code-links:
+    - text: Project source
+      icon: github
+      href: https://github.com/githubpsyche/narrative-memory-proposal
+
+language:
+  title-block-published: Archived version
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: Contents
+    number-sections: false
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+  pdf:
+    documentclass: article
+    pdf-engine: lualatex
+    papersize: letter
+    fontsize: 11pt
+    geometry:
+      - margin=1in
+    toc: false
+    number-sections: false
+    colorlinks: true
+    linkcolor: darkgray
+    urlcolor: teal
+    keep-tex: false
+    include-in-header:
+      text: |
+        \usepackage{needspace}
+
+execute:
+  enabled: false
+

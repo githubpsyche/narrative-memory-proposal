@@ -1,0 +1,7 @@
+/.quarto/
+/.DS_Store
+/*.log
+/*.tex
+/site_libs/
+
+**/*.quarto_ipynb
